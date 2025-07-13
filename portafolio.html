@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simpledotcss@2.2.1/simple.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.snow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar_main"> 
+        <div class="sidebar_logo">
+            <h1>Portafolio</h1>
+        </div>
+        <nav>
+            <a href="#about"class="nav-link active">Sobre mi</a>
+            <a href="#projects"class="nav-link">Mis proyectos</a>
+            <a href="#blog"class="nav-link">Blog</a>
+            <a href="#testimonils"class="nav-link">Testimonios
+            <a href="#contact"class="nav-link">Informacion de contacto</a>
+        <nav>
+    </div>
+    <div class="content">
+
+         <!--Seccion de sobre mi-->
+         <section id="about">
+            <h2>Sobre mi</h2>
+            <div class="profile-container">
+                <div class="profile-upload " id="profileUpload">
+                    <i class="fas fa-user-circle fa-5x" id="profilePlaceHolder"></i>
+                    <img id="ProfileImg" src="" alt="Foto de perfil">
+                    <input type="text" id="profileInput" accept="image/*">           
+                </div>
+                <h3>Juan Camilo Cardona</h3>
+            </div>
+
+            <div class="bio">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quidem reiciendis ea blanditiis aspernatur suscipit nostrum numquam.harum quibusdam, exercitationem molestias, fuga sit ex. Voluptates
+                    laudantium non vero? Similique, velit dolorem.
+                </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quidem reiciendis ea blanditiis aspernatur suscipit nostrum numquam harum quibusdam, exercitationem molestias, fuga sit ex. Voluptates
+                    laudantium non vero? Similique, velit dolorem.
+                </p>
+            </div>
+
+
+            <div class="skills">
+                <div class="skills-badge">JavaScrpt</div>
+                <div class="skills-badge">Node.js</div>
+                <div class="skills-badge">Py</div>
+            </div>
+
+
+
+
+
+
+        </section>
+
+         <!--Seccion de proyectos-->
+         <section id="proyects">
+            <div class="proyects-header">
+                <h2>Projets</h2>
+                <select name="category-filter" id="category-filter">
+                    <option value="all">Todos los proyectos</option>
+                    <option value="web">Desarrollos web</option>
+                    <option value="mobile">Aplicaciones mobiles</option>
+                    <option value="design">Diseño de interfaces</option>
+                    <option value="backend">Servicios backend</option>
+                </select>
+            </div>
+
+            <div class="projets-grid ">
+
+                <div class="projets-card" data-category="web">
+                    <div class="project-thumb">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg"
+                            alt="Imagen de proyecto web">
+                    </div>
+                </div>
+                <div class="Projet-info">
+                    <h3>Mi primera pagina web</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Aspernatur, sunt sed. Totam, rem id. Reprehenderitnecessitatibus, sequi, corporis aut cum ad blanditiis
+                        repellat vitae maiores non nostrum in laudantium 
+                    </p>
+                    <a href="" class="Projet-link">Ver proyecto</a>
+                </div>
+
+                <div class="projets-card" data-category="mobile">
+                    <div class="project-thumb">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg"
+                            alt="Imagen de proyecto mobile">
+                    </div>
+                </div>
+                <div class="Projet-info">
+                    <h3>Mi aplicación mobile</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Aspernatur, sunt sed. Totam, rem id. Reprehenderitnecessitatibus, sequi, corporis aut cum ad blanditiis
+                        repellat vitae maiores non nostrum in laudantium 
+                    </p>
+                    <a href="" class="Projet-link">Ver proyecto</a>
+                </div>
+                <div class="projets-card" data-category="design">
+                    <div class="project-thumb">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg"
+                            alt="Imagen de proyecto de diseño">
+                    </div>
+                </div>
+                <div class="Projet-info">
+                    <h3>Mi diseño grafico</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Aspernatur, sunt sed. Totam, rem id. Reprehenderitnecessitatibus, sequi, corporis aut cum ad blanditiis
+                        repellat vitae maiores non nostrum in laudantium 
+                    </p>
+                    <a href="" class="Projet-link">Ver proyecto</a>
+                </div>
+                <div class="projets-card" data-category="backend">
+                    <div class="project-thumb">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg"
+                            alt="Imagen de proyecto backend">
+                    </div>
+                </div>
+                <div class="Projet-info">
+                    <h3>Mi primer microservicio</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Aspernatur, sunt sed. Totam, rem id. Reprehenderitnecessitatibus, sequi, corporis aut cum ad blanditiis
+                        repellat vitae maiores non nostrum in laudantium 
+                    </p>
+                    <a href="" class="Projet-link">Ver proyecto</a>
+                </div>
+                <div class="projets-card" data-category="web">
+                    <div class="project-thumb">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg"
+                            alt="Imagen de proyecto web">
+                    </div>
+                </div>
+                <div class="Projet-info">
+                    <h3>Mi primera pagina web</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Aspernatur, sunt sed. Totam, rem id. Reprehenderitnecessitatibus, sequi, corporis aut cum ad blanditiis
+                        repellat vitae maiores non nostrum in laudantium 
+                    </p>
+                    <a href="" class="Projet-link">Ver proyecto</a>
+                </div>
+             </div>
+        </section>
+
+        <!--Seccion de contacto-->
+        <section id="contact">
+            <h2>informacion de contacto</h2>
+
+            <div class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label  class="form-label" for="name">Nombre</label>
+                    <input type="text" class="form-contro"  id="name" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label  class="form-label" for="email">Emal</label>
+                    <input type="text" class="form-contro"  id="email" placeholder="Ingresa tu email">
+                </div>
+
+                <div class="form-group">
+                    <label  class="form-label" for="name">Nombre</label>
+                    <textarea name="" id=""></textarea>
+                    <div class=""></div>
+                </div>
+
+                <button type="submit" class=""></button>
+            </div>
+        </section>
+
+
+
+
+
+        
+
+         <!-- Sección de "blog" -->
+        <section id="blog">
+            <div class="blog-header">
+                <h2>Blog</h2>
+                <button class="new-post-btn" id="newPostBtn">New Post</button>
+            </div>
+
+            <div class="blog-list" id="blogList">
+                <!-- Listado de las publicaciones, articulos o noticias (se agregan con JavaScript) -->
+            </div>
+        </section>
+
+           <!-- Sección de "testimonios" -->
+        <section id="testimonials">
+            <h2>Testimonios</h2>
+
+            <div class="testimonials-container">
+                <div class="carousel" id="testimonialCarousel">
+                    <div class="testimonial-container carousel-item active">
+                        <div class="testimonial-avatar">
+                            <img src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_1280.jpg"
+                                alt="Avatar de usuario">
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, fuga? Consequatur omnis
+                            non
+                            dicta amet neque mollitia unde repellat reiciendis quae repudiandae eveniet eligendi, nam,
+                            asperiores atque quis est optio!
+                        </p>
+                    </div>
+
+                    <div class="testimonial-container carousel-item active">
+                        <div class="testimonial-avatar">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+                                alt="Avatar de usuario">
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, fuga? Consequatur omnis
+                            non
+                            dicta amet neque mollitia unde repellat reiciendis quae repudiandae eveniet eligendi, nam,
+                            asperiores atque quis est optio!
+                        </p>
+                    </div>
+
+                    <div class="testimonial-container carousel-item active">
+                        <div class="testimonial-avatar">
+                            <img src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083377_1280.jpg"
+                                alt="Avatar de usuario">
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, fuga? Consequatur omnis
+                            non
+                            dicta amet neque mollitia unde repellat reiciendis quae repudiandae eveniet eligendi, nam,
+                            asperiores atque quis est optio!
+                        </p>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev-btn" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next-btn" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        
+
+    </div>
+    <!-- Sección de "información de contacto" -->
+    <section id="contact">
+        <h2>Información de contacto</h2>
+
+        <div class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label class="form-label" for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+                <div class="form-error" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" placeholder="Your message"></textarea>
+                <div class="form-error" id="messageError"></div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Send Message<span class="spinner"
+                    id="submitSpinner"></span></button>
+        </div>
+        <div class="form-success" id="formSuccess">
+            <h3>Thank you for your message!</h3>
+            <p>I'll get back to you as soon as possible.</p>
+        </div>
+    </section>
+    <div class="modal" id="blogModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Nueva publicación</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="post-title-input" id="postTitle" placeholder="Post Title">
+                <div id="editor" class="editor"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-draft" id="saveDraftBtn">Save Draft</button>
+                <button class="btn btn-publish" id="publishBtn">Publish</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
